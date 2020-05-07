@@ -4,6 +4,7 @@ var $searchedCities = $("#searched-cities");
 var $cityResults = $("#city-results");
 var currentDay = $(".currentDay");
 
+// todays date
 var today = (moment().format('MMMM Do YYYY'));
 
 var cities = [];
