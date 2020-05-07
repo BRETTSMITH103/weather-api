@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather Dashbaord</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Times+New+Roman|Helvetica&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://kit.fontawesome.com/cc636e3eec.js"></script>
+
+</head>
+
+<body>
+  <header class="text-light bg-dark p-4 text-center display-4">
+
+    <!-- https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use -->
+
+
+    Weather Dash<i class="fas fa-clouds"></i>
+  </header>
+  <main class="container-fluid mt-5">
+    <div class="row">
+
+      <div class="col-12 col-md-4">
+        <div class="card">
+          <h4 class="card-header bg-dark text-light">
+            Search for a City:
+          </h4>
+          <form class="card-body form-inline" id="search-form">
+            <div class="form-group">
+              <input type="text" class="form-control" id="search-input" placeholder="Enter search term" />
+              <button>
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+          <div id="searched-cities"></div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <div class="city"></div>
+            <div class="currentDay"></div>
+            <div class="description"></div>
+            <div class="humidity"></div>
+            <div class="temp"></div>
+            <div class="wind"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <div class="card">
+              <div class="card-body" id="city-results">
+              </div>
+              <div class="card-body" id="fiveDay-results"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
